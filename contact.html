@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Mon entreprise</title>
+
+    <meta name="description" content="Contactez MON ENTREPRISE pour discuter de votre projet.">
+    <meta name="keywords" content="contact, entreprise, projet, Madagascar">
+    <meta name="author" content="MON ENTREPRISE">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <meta property="og:title" content="Contact - Mon entreprise">
+    <meta property="og:description" content="Contactez MON ENTREPRISE pour discuter de votre projet.">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+
+    <header>
+        <h1>MON ENTREPRISE</h1>
+
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <nav id="menu">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact">
+
+        <div class="contact-header">
+            <p class="small-title">PARLONS DE VOTRE PROJET</p>
+            <h2>Contactez-nous</h2>
+            <p>
+                Vous avez un projet ? N'hésitez pas à nous contacter.
+            </p>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Nos coordonnées</h3>
+
+                <p>📧 Email : contact@monentreprise.com</p>
+
+                <p>📞 Téléphone : +261 38 20 113 62</p>
+
+                <p>📍 Adresse : Antananarivo, Madagascar</p>
+
+            </div>
+
+            <form
+                id="contact-form"
+                action="https://formspree.io/f/xyekgvyv"
+                method="POST"
+            >
+
+                <label for="name">Nom</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Votre nom"
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="name"
+                    placeholder="Votre email"
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="name"
+                    placeholder="Votre message"
+                    minlength="10"
+                    maxlength="500"
+                ></textarea>
+
+                <small id="message-counter">0 / 500</small>
+
+                <button type="submit">Envoyer</button>
+
+                <p id="form-message"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <h3>MON ENTREPRISE</h3>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <p>© 2026 Mon entreprise - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
